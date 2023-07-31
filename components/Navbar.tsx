@@ -10,7 +10,12 @@ const NavItem: FunctionComponent<{
 }> = ({ activeItem, setActiveItem, name, route }) => {
   return activeItem !== name ? (
     <Link href={route}>
-      <span onClick={() => setActiveItem(name)}>{name}</span>
+      <span
+        className="transition duration-300 all hover:text-green"
+        onClick={() => setActiveItem(name)}
+      >
+        {name}
+      </span>
     </Link>
   ) : null;
 };
@@ -27,9 +32,11 @@ const Navbar = () => {
     // eslint-disable-next-line
   }, []);
   return (
-    <div>
-      <span className="text-green">{activeItem}</span>
-      <div className="flex space-x-3 text-red-500 font-lg">
+    <div className="flex items-center justify-between px-5 py-3 my-3">
+      <span className="text-xl font-bold border-b-4 text-green border-green md:text-2xl">
+        {activeItem}
+      </span>
+      <div className="flex space-x-5 text-lg">
         <NavItem
           activeItem={activeItem}
           name="About"
