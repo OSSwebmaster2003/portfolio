@@ -7,7 +7,14 @@ module.exports = {
     "./src/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
-    extend: {},
+    fontFamily: {
+      kaushan: ["Kaushan Script"],
+    },
+    extend: {
+      colors: {
+        green: "#00f260",
+      },
+    },
   },
   plugins: [],
 };
