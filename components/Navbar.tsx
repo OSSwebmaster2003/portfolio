@@ -10,7 +10,7 @@ const NavItem: FunctionComponent<{
 }> = ({ activeItem, setActiveItem, name, route }) => {
   return activeItem !== name ? (
     <Link href={route}>
-      <span onClick={() => setActiveItem(name)}>About</span>
+      <span onClick={() => setActiveItem(name)}>{name}</span>
     </Link>
   ) : null;
 };
@@ -31,22 +31,22 @@ const Navbar = () => {
       <span className="text-green">{activeItem}</span>
       <div className="flex space-x-3 text-red-500 font-lg">
         <NavItem
-          activeItem="About"
+          activeItem={activeItem}
           name="About"
           route="/"
-          setActiveItem={() => setActiveItem}
+          setActiveItem={setActiveItem}
         />
         <NavItem
-          activeItem="Projects"
+          activeItem={activeItem}
           name="Projects"
           route="/projects"
-          setActiveItem={() => setActiveItem}
+          setActiveItem={setActiveItem}
         />
         <NavItem
-          activeItem="Resume"
+          activeItem={activeItem}
           name="Resume"
           route="/resume"
-          setActiveItem={() => setActiveItem}
+          setActiveItem={setActiveItem}
         />
       </div>
     </div>
