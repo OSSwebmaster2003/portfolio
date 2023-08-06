@@ -1,9 +1,14 @@
 import { AiFillGithub, AiFillLinkedin, AiFillYoutube } from "react-icons/ai";
 import { GoLocation } from "react-icons/go";
 import { GiTie } from "react-icons/gi";
-import { LuPhoneCall } from "react-icons/lu";
+import { useTheme } from "next-themes";
 
 const Sidebar = () => {
+  const { theme, setTheme } = useTheme();
+
+  const changeTheme = () => {
+    setTheme(theme === "light" ? "dark" : "light");
+  };
   return (
     <div>
       {/* eslint-disable-next-line */}
@@ -57,8 +62,11 @@ const Sidebar = () => {
       >
         Email me
       </button>
-      <button className="w-8/12 px-5 py-2 my-2 rounded-full bg-gradient-to-r from-green to-blue-400">
-        Toggle theme
+      <button
+        onClick={changeTheme}
+        className="w-8/12 px-5 py-2 my-4 text-white bg-black rounded-full cursor-pointer bg-gradient-to-r from-green to-blue-500"
+      >
+        Toggle Theme
       </button>
     </div>
   );
