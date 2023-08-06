@@ -1,23 +1,34 @@
 import { FunctionComponent } from "react";
 import { Category } from "../type";
 
-export const NavItem: FunctionComponent<{ value: Category | "all" }> = ({
-  value,
-}) => {
+export const NavItem: FunctionComponent<{
+  value: Category | "all";
+  handleCategoryFilter: Function;
+  active: string;
+}> = ({ value, handleCategoryFilter, active }) => {
+  let classname = `capitalize cursor-pointer hover:text-green`;
+  if (active === value) {
+    classname += " text-green";
+  }
   return (
-    <li className="capitalize cursor-pointer hover:text-green">{value}</li>
+    <li className={classname} onClick={() => handleCategoryFilter(value)}>
+      {value}
+    </li>
   );
 };
 
-const ProjectNavbar = () => {
+const ProjectNavbar: FunctionComponent<{
+  handleCategoryFilter: Function;
+  active: string;
+}> = (props) => {
   return (
     <div className="flex px-3 py-2 space-x-3 overflow-x-auto list-none">
-      <NavItem value="all" />
-      <NavItem value="react" />
-      <NavItem value="mongo" />
-      <NavItem value="django" />
-      <NavItem value="node" />
-      <NavItem value="express" />
+      <NavItem value="all" {...props} />
+      <NavItem value="react" {...props} />
+      <NavItem value="mongo" {...props} />
+      <NavItem value="django" {...props} />
+      <NavItem value="node" {...props} />
+      <NavItem value="express" {...props} />
     </div>
   );
 };
