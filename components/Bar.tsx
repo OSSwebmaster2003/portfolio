@@ -1,6 +1,5 @@
 import { FunctionComponent } from "react";
 import { motion } from "framer-motion";
-import { useSpring } from "framer-motion";
 import { ISkill } from "../type";
 
 const Bar: FunctionComponent<{ data: ISkill }> = ({
@@ -22,8 +21,6 @@ const Bar: FunctionComponent<{ data: ISkill }> = ({
       },
     },
   };
-
-  // const spring = useSpring();
 
   return (
     <div className="my-2 text-white bg-gray-300 rounded-full dark:bg-dark-700">
