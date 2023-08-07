@@ -2,6 +2,7 @@ import { AiFillGithub, AiFillLinkedin, AiFillYoutube } from "react-icons/ai";
 import { GoLocation } from "react-icons/go";
 import { GiTie } from "react-icons/gi";
 import { useTheme } from "next-themes";
+import Image from "next/image";
 
 const Sidebar = () => {
   const { theme, setTheme } = useTheme();
@@ -11,11 +12,13 @@ const Sidebar = () => {
   };
   return (
     <div>
-      {/* eslint-disable-next-line */}
-      <img
+      <Image
         src="https://avatars.githubusercontent.com/u/117542307?s=400&u=fb80fe048c7d3925b6aad3c1b57bbc6248d45923&v=4"
         alt="user avatar"
-        className="w-32 h-32 mx-auto rounded-full"
+        className="mx-auto rounded-full"
+        width="128"
+        height="128"
+        layout="intrinsic"
       />
       <h3 className="my-4 text-3xl font-medium tracking-wider font-kaushan">
         <span className="mx-1 text-green">Otabek</span>
@@ -32,7 +35,6 @@ const Sidebar = () => {
         <GiTie className="w-6 h-6" />
         Download Resume
       </a>
-      {/* social media */}
       <div className="flex justify-around w-9/12 mx-auto my-5 text-green md:w-full">
         <a href="">
           <AiFillGithub className="w-8 h-8 cursor-pointer" />
@@ -44,7 +46,6 @@ const Sidebar = () => {
           <AiFillLinkedin className="w-8 h-8" />
         </a>
       </div>
-      {/* address */}
       <div
         className="py-4 my-5 bg-gray-200 dark:bg-dark-200"
         style={{ marginLeft: "-1rem", marginRight: "-1rem" }}
