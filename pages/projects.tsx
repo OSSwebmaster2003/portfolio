@@ -4,7 +4,7 @@ import ProjectCard from "../components/ProjectCard";
 import ProjectNavbar from "../components/ProjectNavbar";
 import { projects as projectsData } from "../data";
 import { Category } from "../type";
-import { fadeInUp, stagger } from "../animation";
+import { fadeInUp, routeAnimation, stagger } from "../animation";
 
 const Projects = () => {
   const [projects, setProjects] = useState(projectsData);
@@ -24,7 +24,14 @@ const Projects = () => {
     setActive(category);
   };
   return (
-    <div className="px-5 py-2 overflow-y-scroll" style={{ height: "65vh" }}>
+    <motion.div
+      className="px-5 py-2 overflow-y-scroll"
+      style={{ height: "65vh" }}
+      variants={routeAnimation}
+      initial="initial"
+      animate="animate"
+      exit="exit"
+    >
       <ProjectNavbar
         handleCategoryFilter={handleCategoryFilter}
         active={active}
@@ -45,7 +52,7 @@ const Projects = () => {
           </motion.div>
         ))}
       </motion.div>
-    </div>
+    </motion.div>
   );
 };
 
