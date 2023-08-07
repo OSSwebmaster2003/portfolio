@@ -1,5 +1,7 @@
+import { fadeInUp, stagger } from "../animation";
 import ServiceCard from "../components/ServiceCard";
 import { services } from "../data";
+import { motion } from "framer-motion";
 
 const index = () => {
   return (
@@ -15,16 +17,22 @@ const index = () => {
         style={{ marginLeft: "-1.5rem", marginRight: "-1.5rem" }}
       >
         <h6 className="my-3 text-xl font-bold tracking-wide">What I Offer</h6>
-        <div className="grid gap-6 my-3 md:grid-cols-2">
+        <motion.div
+          className="grid gap-6 my-3 md:grid-cols-2"
+          variants={stagger}
+          initial="initial"
+          animate="animate"
+        >
           {services.map((service) => (
-            <div
+            <motion.div
+              variants={fadeInUp}
               className="bg-gray-200 rounded dark:bg-dark-200 lg:col-span-1"
               key={service.title}
             >
               <ServiceCard service={service} />
-            </div>
+            </motion.div>
           ))}
-        </div>
+        </motion.div>
       </div>
     </div>
   );
