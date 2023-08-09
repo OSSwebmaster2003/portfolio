@@ -136,6 +136,17 @@ export const projects: IProject[] = [
 
   {
     id: 5,
+    name: "Portfolio Website",
+    image_path: "/images/portfolio.jpg",
+    deployed_url: "https://otabek1509.vercel.app/",
+    github_url: "https://github.com/OSSwebmaster2003/portfolio",
+    category: ["react", "next", "typescript"],
+    description: "Simple portfolio website for myself",
+    key_techs: ["React", "Typescript", "Next", "Frame-motion"],
+  },
+
+  {
+    id: 6,
     name: "Note App",
     image_path: "/images/noteApp.jpg",
     deployed_url: "https://otabek-typescript-note-app.netlify.app/",
@@ -146,7 +157,7 @@ export const projects: IProject[] = [
   },
 
   {
-    id: 6,
+    id: 7,
     name: "Primetech",
     image_path: "/images/primetech.jpg",
     deployed_url: "https://otabek-privatecompany.netlify.app/",
@@ -156,7 +167,7 @@ export const projects: IProject[] = [
     key_techs: ["React", "SASS", "Swiper js", "Redux-Toolkit"],
   },
   {
-    id: 7,
+    id: 8,
     name: "ANISA AI",
     image_path: "/images/anisa.jpg",
     deployed_url: "https://anisaai.uz/",
