@@ -1,5 +1,5 @@
 import { AiFillGithub, AiFillLinkedin } from "react-icons/ai";
-import { FaTelegram } from "react-icons/fa";
+import { FaTelegram } from "react-Icons/fa";
 import { GoLocation } from "react-icons/go";
 import { GiTie } from "react-icons/gi";
 import { useTheme } from "next-themes";
@@ -55,7 +55,7 @@ const Sidebar = () => {
           <GoLocation />
           <span>Bukhara,Uzbekistan</span>
         </div>
-        <p className="my-2">sodikovotabeksobirjonovich1509@gmail.com</p>
+        <p className="my-2">sodiqovotabek1509@gmail.com</p>
         <p className="my-2">+998936843757 / +998934506315</p>
       </div>
       <button
