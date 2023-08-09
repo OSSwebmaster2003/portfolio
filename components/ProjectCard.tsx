@@ -1,6 +1,6 @@
 import { FunctionComponent } from "react";
 import { AiFillGithub, AiFillProject } from "react-icons/ai";
-import { MdClose } from "react-Icons/md";
+import { IoClose } from "react-icons/io5";
 import { motion } from "framer-motion";
 import Image from "next/image";
 import { IProject } from "../type";
@@ -100,7 +100,7 @@ const ProjectCard: FunctionComponent<{
             onClick={() => setShowDetail(null)}
             className="absolute p-1 bg-gray-200 rounded-full top-3 right-3 focus:outline-none dark:bg-dark-200"
           >
-            <MdClose size={30} />
+            <IoClose size={30} className="text-white" />
           </button>
         </div>
       )}
