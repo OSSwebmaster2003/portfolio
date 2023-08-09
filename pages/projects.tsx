@@ -38,7 +38,7 @@ const Projects = () => {
         active={active}
       />
       <motion.div
-        className="relative grid grid-cols-12 gap-4 my-3"
+        className="grid grid-cols-12 gap-4 my-3"
         variants={stagger}
         initial="initial"
         animate="animate"
