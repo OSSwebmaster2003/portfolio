@@ -1,13 +1,13 @@
-import { RiComputerLine } from "react-Icons/ri";
-import { FaServer } from "react-Icons/fa";
+import { IoMdLaptop } from "react-icons/io";
+import { FaServer } from "react-icons/fa6";
 import { BsCircleFill } from "react-icons/bs";
-import { MdDeveloperMode } from "react-Icons/md";
+import { MdDeveloperMode } from "react-icons/md";
 import { BiSolidBot } from "react-icons/bi";
 import { IProject, IService, ISkill } from "./type";
 
 export const services: IService[] = [
   {
-    Icon: RiComputerLine,
+    Icon: IoMdLaptop,
     title: "Frontend Development",
     about:
       "I can build a beautiful and scalable SPA using <b> HTML</b>,<b>CSS</b>   and <b>React.js</b> ",
