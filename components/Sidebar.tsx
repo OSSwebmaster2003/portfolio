@@ -59,7 +59,7 @@ const Sidebar = () => {
         <p className="my-2">+998936843757 / +998934506315</p>
       </div>
       <button
-        className="w-8/12 px-5 py-2 my-2 rounded-full bg-gradient-to-r from-green to-blue-400 focus:outline-none"
+        className="w-10/12 px-5 py-2 my-2 rounded-full xl:w-8/12 bg-gradient-to-r from-green to-blue-400 focus:outline-none"
         onClick={() =>
           window.open("mailto : sodikovotabeksobirjonovich1509@gmail.com")
         }
@@ -68,7 +68,7 @@ const Sidebar = () => {
       </button>
       <button
         onClick={changeTheme}
-        className="w-8/12 px-5 py-2 my-4 text-white rounded-full cursor-pointer bg-blac bg-gradient-to-r from-green to-blue-500"
+        className="w-10/12 px-5 py-2 my-4 text-white rounded-full cursor-pointer xl:w-8/12 bg-blac bg-gradient-to-r from-green to-blue-500"
       >
         Toggle Theme
       </button>
