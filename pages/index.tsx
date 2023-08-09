@@ -13,10 +13,13 @@ const index = () => {
       exit="exit"
     >
       <h5 className="my-3 text-base font-medium">
-        I am currently pursuing B.Tech Degree(Final Year) in Computer Science
-        Engineering from Academy of Technology. I have 3+ years of experience in
-        Web Development and i have a Youtube Channel where i teach Full Stack
-        Web Development Projects
+        Frontend web developer who is very determined and seeking for the job in
+        order to gain experience and working on real projects. Diligent student
+        in terms of learning new things and trying them. I am currently studying
+        at Ajoun University in Tashkent(Third Year) in Computer Science
+        Engineering from Academy of Technology. I have 1+ years of experience in
+        Web Development and Frontend Developer and i like to craft solid and
+        scalable frontend products with great user experiences.
       </h5>
       <div
         className="flex-grow p-4 mt-5 bg-gray-400 dark:bg-dark-100"

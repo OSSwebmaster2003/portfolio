@@ -20,19 +20,36 @@ const resume = () => {
             <h5 className="my-2 text-xl font-bold">
               Computer Science Engineering
             </h5>
-            <p className="font-semibold">Academy of Technology(2017-2021)</p>
+            <p className="font-semibold">Karakul Academic Lyceum(2018-2020)</p>
             <p className="my-3">
-              I am currently pursuing B.tech in Computer Science Engineering
-              from Academy of Technology
+              During 2018-2020 , I studied at Karakul Academic Lyceum. Here i
+              learnt advanced Mathematics, English and critical thinking. Now I
+              am studying at Ajou University in Tashkent ,third-year student,
+              faculty - Electrical and Computer Engineering
             </p>
           </div>
         </motion.div>
         <motion.div variants={fadeInUp} initial="initial" animate="animate">
           <h5 className="my-3 text-2xl font-bold">Experience</h5>
           <div>
-            <h5 className="my-2 text-xl font-bold">Software Engineer Jr</h5>
-            <p className="font-semibold">TCS(2021 - on)</p>
-            <p className="my-3">I do not know why i am doing this job</p>
+            <h5 className="my-2 text-xl font-bold">
+              Intern Frontend Developer
+            </h5>
+            <p className="font-semibold">Perfect Result</p>
+            <p className="my-3">
+              I tried to improve my skills and i did my best to give my all for
+              the benefit of the company
+            </p>
+          </div>
+          <div>
+            <h5 className="my-2 text-xl font-bold">
+              Junior Frontend Developer
+            </h5>
+            <p className="font-semibold">Iq Academy</p>
+            <p className="my-3">
+              I learnt some new technologies, libraries and frameworks and
+              improved my skills
+            </p>
           </div>
         </motion.div>
       </div>

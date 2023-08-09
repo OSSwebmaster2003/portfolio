@@ -1,4 +1,5 @@
-import { AiFillGithub, AiFillLinkedin, AiFillYoutube } from "react-icons/ai";
+import { AiFillGithub, AiFillLinkedin } from "react-icons/ai";
+import { FaTelegram } from "react-icons/fa";
 import { GoLocation } from "react-icons/go";
 import { GiTie } from "react-icons/gi";
 import { useTheme } from "next-themes";
@@ -28,21 +29,21 @@ const Sidebar = () => {
         Web Developer
       </p>
       <a
-        href=""
-        download="name"
+        href="/images/blink.jpg"
+        download="Otabek Sodiqov Resume"
         className="flex items-center justify-center px-2 py-1 my-3 bg-gray-200 rounded-full dark:bg-dark-200"
       >
         <GiTie className="w-6 h-6" />
         Download Resume
       </a>
       <div className="flex justify-around w-9/12 mx-auto my-5 text-green md:w-full">
-        <a href="">
+        <a href="https://github.com/OSSwebmaster2003/">
           <AiFillGithub className="w-8 h-8 cursor-pointer" />
         </a>
-        <a href="">
-          <AiFillYoutube className="w-8 h-8" />
+        <a href="https://t.me/Otabek_Sobirjonovich">
+          <FaTelegram className="w-8 h-8" />
         </a>
-        <a href="">
+        <a href="https://www.linkedin.com/in/otabek-s-081013266/">
           <AiFillLinkedin className="w-8 h-8" />
         </a>
       </div>
