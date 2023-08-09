@@ -1,5 +1,5 @@
 import { AiFillGithub, AiFillLinkedin } from "react-icons/ai";
-import { FaTelegram } from "react-Icons/fa";
+import { BsTelegram } from "react-icons/bs";
 import { GoLocation } from "react-icons/go";
 import { GiTie } from "react-icons/gi";
 import { useTheme } from "next-themes";
@@ -41,7 +41,7 @@ const Sidebar = () => {
           <AiFillGithub className="w-8 h-8 cursor-pointer" />
         </a>
         <a href="https://t.me/Otabek_Sobirjonovich">
-          <FaTelegram className="w-8 h-8" />
+          <BsTelegram className="w-8 h-8" />
         </a>
         <a href="https://www.linkedin.com/in/otabek-s-081013266/">
           <AiFillLinkedin className="w-8 h-8" />
