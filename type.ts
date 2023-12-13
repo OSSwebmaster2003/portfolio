@@ -23,4 +23,4 @@ export interface IProject {
   key_techs: string[];
 }
 
-export type Category = "react" | "typescript" | "next" | "telegram bot";
+export type Category = "html" | "react" | "typescript" | "next" | "mern";

@@ -2,7 +2,7 @@ import { IoMdLaptop } from "react-icons/io";
 import { FaServer } from "react-icons/fa6";
 import { BsCircleFill } from "react-icons/bs";
 import { MdDeveloperMode } from "react-icons/md";
-import { BiSolidBot } from "react-icons/bi";
+import { FaCode } from "react-icons/fa6";
 import { IProject, IService, ISkill } from "./type";
 
 export const services: IService[] = [
@@ -19,9 +19,10 @@ export const services: IService[] = [
       "I'm equipped with just the right tools, and can absolutely function independently of them to deliver fast, resilient solutions",
   },
   {
-    Icon: BiSolidBot,
-    title: "Telegram Bot",
-    about: "I can develop simple telegram bots and web telegram bot ",
+    Icon: FaCode,
+    title: "Full Stack Websites",
+    about:
+      "I can develop your web application from scratch to finish with all access to change anything by yourself",
   },
   {
     Icon: MdDeveloperMode,
@@ -168,12 +169,36 @@ export const projects: IProject[] = [
   },
   {
     id: 8,
-    name: "ANISA AI",
-    image_path: "/images/anisa.jpg",
-    deployed_url: "https://anisaai.uz/",
-    github_url: "https://github.com/OSSwebmaster2003/Anisa-AI",
+    name: "Social Media",
+    image_path: "/images/social-media.jpg",
+    deployed_url: "https://webmaestro-landing-static-social-media.vercel.app/",
+    github_url:
+      "https://github.com/OSSwebmaster2003/landing-static-social-media",
     category: ["react"],
-    description: "website of official anisa ai's mobile application",
-    key_techs: ["React", "Redux", "ANTD"],
+    description:
+      "Just a small landing page website without functionality. I have done this project because of learning Material UI library",
+    key_techs: ["React", "MUI", "React Icons"],
+  },
+  {
+    id: 9,
+    name: "Study Advisor",
+    image_path: "/images/study-advisor.jpg",
+    deployed_url: "https://knowledge-study-advisor.vercel.app/",
+    github_url: "https://github.com/OSSwebmaster2003/knowledge_study_advisor",
+    category: ["html"],
+    description:
+      "This is the demo version of real project that i received on Upwork platform , i finished the project for the client and here you can see it",
+    key_techs: ["Html", "Css", "Javascript", "Owl-Carousel"],
+  },
+  {
+    id: 10,
+    name: "Admin Dashboard",
+    image_path: "/images/admin-dashboard.jpg",
+    deployed_url: "https://webmaestro-admin-dashboard.onrender.com",
+    github_url: "https://github.com/OSSwebmaster2003/MERNSTACK_ADMIN_DASHBOARD",
+    category: ["react", "mern"],
+    description:
+      "The MERN Stack project created with the help of MERN and Materail Ui and project is still in progress. It works a little bit slowlier as i used the free version of onrender.com for my server",
+    key_techs: ["Mongo DB", "Express", "React", "Node", "MUI", "Nivo Charts"],
   },
 ];

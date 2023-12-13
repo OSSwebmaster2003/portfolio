@@ -24,10 +24,11 @@ const ProjectNavbar: FunctionComponent<{
   return (
     <div className="flex px-3 py-2 space-x-3 overflow-x-auto list-none">
       <NavItem value="all" {...props} />
+      <NavItem value="html" {...props} />
       <NavItem value="react" {...props} />
       <NavItem value="typescript" {...props} />
       <NavItem value="next" {...props} />
-      <NavItem value="telegram bot" {...props} />
+      <NavItem value="mern" {...props} />
     </div>
   );
 };
