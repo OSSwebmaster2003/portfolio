@@ -49,18 +49,33 @@ export const languages: ISkill[] = [
   },
   {
     Icon: BsCircleFill,
-    name: "React",
+    name: "React Js",
     level: "70",
   },
   {
     Icon: BsCircleFill,
-    name: "Next",
+    name: "Next Js",
     level: "65",
   },
   {
     Icon: BsCircleFill,
     name: "Typescript",
     level: "60",
+  },
+  {
+    Icon: BsCircleFill,
+    name: "Mongo DB",
+    level: "70",
+  },
+  {
+    Icon: BsCircleFill,
+    name: "Express Js",
+    level: "50",
+  },
+  {
+    Icon: BsCircleFill,
+    name: "Node js",
+    level: "40",
   },
 ];
 
