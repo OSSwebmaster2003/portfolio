@@ -7,7 +7,7 @@ import { Category } from "../type";
 import { fadeInUp, routeAnimation, stagger } from "../animation";
 
 const Projects = () => {
-  const [projects, setProjects] = useState(projectsData);
+  const [projects, setProjects] = useState(projectsData.reverse());
   const [active, setActive] = useState("all");
   const [showDetail, setShowDetail] = useState<number | null>(null);
 
